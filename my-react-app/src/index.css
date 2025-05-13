@@ -1,0 +1,33 @@
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#sw-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(206, 206, 206);
+  margin: 25% 25%;
+  border-radius: 10px;
+  border: 4px solid black;
+}
+
+#sw-clock{
+  padding: 20px;
+  font-size: xxx-large;
+}
+
+#btn-grp{
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  padding-bottom: 20px;
+}
+
+#btn-grp button{
+  padding: 5px 20px;
+  border-radius: 5px;
+  
+}
