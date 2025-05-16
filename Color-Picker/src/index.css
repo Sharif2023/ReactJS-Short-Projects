@@ -1,0 +1,83 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #e3f2fd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.counter-display {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #1976d2;
+}
+
+.button-group {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 8rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn.increment {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn.increment:hover {
+  background-color: #45a049;
+}
+
+.btn.decrement {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn.decrement:hover {
+  background-color: #e53935;
+}
+
+.btn.reset {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.btn.reset:hover {
+  background-color: #000000;
+}
+
+.clicks {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #444;
+}
