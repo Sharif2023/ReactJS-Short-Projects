@@ -1,83 +1,81 @@
 body {
+  background-image: url('https://static6.depositphotos.com/1167801/651/i/450/depositphotos_6517777-stock-photo-rainbow-of-colorful-boxes.jpg');
+}
+
+.color-picker-container {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to right, #e0f7fa, #e3f2fd);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
-.container {
-  background-color: #ffffff;
-  padding: 30px 40px;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  text-align: center;
   max-width: 400px;
-  width: 100%;
+  margin: 50px auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.title {
-  font-size: 2rem;
-  color: #333;
+.color-picker-container h1 {
+  color: #fff;
   margin-bottom: 20px;
 }
 
-.counter-display {
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 20px 0;
-  color: #1976d2;
-}
-
-.button-group {
-  margin: 20px 0;
+.color-display {
+  height: 120px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
   display: flex;
   justify-content: center;
-  justify-content: space-between;
-}
-
-.btn {
-  padding: 10px 25px;
-  font-size: 1rem;
+  align-items: center;
+  color: #000;
   font-weight: bold;
-  width: 8rem;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+
+label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+input[type="color"] {
+  width: 60px;
+  height: 40px;
   border: none;
-  border-radius: 10px;
+  background: none;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: transform 0.2s;
+  border-radius: 8px;
 }
 
-.btn.increment {
-  background-color: #4caf50;
-  color: white;
+input[type="color"]:hover {
+  transform: scale(1.1);
 }
 
-.btn.increment:hover {
-  background-color: #45a049;
+.copy-button {
+  margin-left: 10px;
+  background: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
 }
 
-.btn.decrement {
-  background-color: #f44336;
-  color: white;
+.copy-button:hover {
+  transform: scale(1.2);
 }
 
-.btn.decrement:hover {
-  background-color: #e53935;
-}
-
-.btn.reset {
-  background-color: #1f1f1f;
-  color: white;
-}
-
-.btn.reset:hover {
-  background-color: #000000;
-}
-
-.clicks {
-  margin-top: 20px;
-  font-size: 1.1rem;
-  color: #444;
+.copied-message {
+  margin-top: 10px;
+  color: #0f0;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
